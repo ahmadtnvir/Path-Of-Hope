@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Path Of Hope</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <title>Path Of Hope</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -13,6 +13,75 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <header>
+      <!-- navbar start -->
+      <div class="bg-[#F9F7F3] pt-6 pb-16">
+        <div id="navbar" class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost md:hidden lg:hidden xl:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <a
+                    class="btn btn-ghost bg-[#B4F461] text-[#111111] text-xl font-semibold"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a class="btn">
+                    <img src="assets/coin.png" alt="" />
+                    <span class="text-[#111111B2] text-xl font-medium"
+                      >5500 BDT</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a
+              class="btn bg-[#B4F461] text-[#111111] text-xl font-semibold hidden md:flex lg:flex justify-center items-center"
+              >Blog</a
+            >
+          </div>
+          <div class="navbar-center">
+            <a class="btn btn-ghost text-xl">
+              <img src="assets/logo.png" alt="" />
+              <span class="text-[#111111] text-xl font-semibold"
+                >Path of Hope</span
+              >
+            </a>
+          </div>
+          <div class="navbar-end">
+            <a class="btn">
+              <img src="assets/coin.png" alt="" />
+              <span class="text-[#111111B2] text-xl font-medium">5500 BDT</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+    </header>
     <script src="js/index.js"></script>
   </body>
 </html>
