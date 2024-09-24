@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
-    <title>Path Of Hope</title>
+    <title>Path Of Hope | Home</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="mb-20">
+    <header id="header" class="mb-20">
       <!-- navbar start -->
       <div class="bg-[#F9F7F3] pt-6 pb-16">
         <div id="navbar" class="navbar">
@@ -45,6 +45,8 @@
               >
                 <li>
                   <a
+                    href="blog.html"
+                    target="_blank"
                     class="btn btn-ghost bg-[#B4F461] text-[#111111] text-xl font-semibold"
                     >Blog</a
                   >
@@ -60,6 +62,8 @@
               </ul>
             </div>
             <a
+              href="blog.html"
+              target="_blank"
               class="btn bg-[#B4F461] text-[#111111] text-xl font-semibold hidden md:flex lg:flex justify-center items-center"
               >Blog</a
             >
@@ -91,6 +95,7 @@
         <button
           id="donation-btn"
           class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent focus:bg-[#B4F461] focus:text-[#111111] focus:border-[#B4F461]"
+          autofocus
         >
           Donation
         </button>

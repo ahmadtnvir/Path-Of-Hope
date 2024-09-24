@@ -1,11 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Path Of Hope | Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="header" class="mb-20">
+      <!-- navbar start -->
+      <div class="bg-[#F9F7F3] pt-6 pb-16">
+        <div id="navbar" class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn btn-ghost md:hidden lg:hidden xl:hidden"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <a
+                    href="index.html"
+                    class="btn btn-ghost bg-[#B4F461] text-[#111111] text-xl font-semibold"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a class="btn">
+                    <img src="assets/coin.png" alt="" />
+                    <span class="text-[#111111B2] text-xl font-medium"
+                      >5500 BDT</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a
+              href="index.html"
+              class="btn bg-[#B4F461] text-[#111111] text-xl font-semibold hidden md:flex lg:flex justify-center items-center"
+              >Home</a
+            >
+          </div>
+          <div class="navbar-center">
+            <a class="btn btn-ghost text-xl">
+              <img src="assets/logo.png" alt="" />
+              <span class="text-[#111111] text-xl font-semibold"
+                >Path of Hope</span
+              >
+            </a>
+          </div>
+          <div class="navbar-end">
+            <a class="btn">
+              <img src="assets/coin.png" alt="" />
+              <span
+                id="decrement-amount"
+                class="text-[#111111B2] text-xl font-medium"
+                >5500 BDT</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+    </header>
+    <main>
+      <section>
+        <div class="text-[#111111] text-4xl font-extrabold mb-8">
+          <h1>
+            Important FAQ <i class="fa-solid fa-question animate-bounce"></i>
+          </h1>
+        </div>
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is Document Object Model (DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface for
+                web documents. It represents the structure of a webpage as a
+                tree of objects (like elements, attributes, and text), allowing
+                developers to access, modify, add, or delete elements
+                dynamically using JavaScript. Essentially, the DOM connects web
+                content (HTML/CSS) with scripts for interactivity.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                You can select an element from the DOM using methods like: 1.
+                document.getElementById("id")` for selecting by ID.
+                2.document.querySelector("selector")` for selecting the first
+                element by a CSS selector.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              What is event delegation in the context of the DOM and why is it
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a technique in the DOM where you attach a
+                single event listener to a parent element instead of multiple
+                listeners on child elements. The event listener can capture
+                events from any of its child elements because events bubble up
+                through the DOM tree. This is useful because it improves
+                performance by reducing the number of event listeners and allows
+                dynamically added elements to be handled without needing to
+                attach new listeners.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              How do you manipulate an element's attributes and styles using the
+              DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                You can manipulate an element's attributes using methods like
+                `setAttribute()` and `getAttribute()` or directly by accessing
+                the properties (e.g., `element.id = "newId"`). To manipulate
+                styles, you can use the `style` property (e.g.,
+                `element.style.color = "blue"`) or add/remove CSS classes using
+                `classList` (e.g., `element.classList.add("newClass")`).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
