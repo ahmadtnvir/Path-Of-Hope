@@ -90,17 +90,18 @@
       <div class="flex justify-center items-center gap-4 mb-8">
         <button
           id="donation-btn"
-          class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent"
+          class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent focus:bg-[#B4F461] focus:text-[#111111] focus:border-[#B4F461]"
         >
           Donation
         </button>
         <button
-          class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent"
+          id="history-btn"
+          class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent focus:bg-[#B4F461] focus:text-[#111111] focus:border-[#B4F461]"
         >
           History
         </button>
       </div>
-      <section id="card-container" class="space-y-8 hidden">
+      <section id="card-container" class="space-y-8">
         <div class="card lg:card-side bg-[#FFFFFF] border p-8">
           <figure class="flex-1">
             <img class="object-cover" src="assets/noakhali.png" alt="Album" />
@@ -120,7 +121,7 @@
               dignissimos quidem nihil ratione ducimus.
             </p>
             <input
-              class="mt-6 mb-4"
+              class="mt-6 mb-4 p-5 border rounded-xl focus:outline-none"
               type="text"
               name=""
               id="noakhali"
@@ -129,7 +130,7 @@
             <div class="card-actions justify-end w-full">
               <button
                 id="noakhali-donate-btn"
-                class="btn btn-outline hover:bg-[#B4F461] w-full"
+                class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent focus:bg-[#B4F461] focus:text-[#111111] focus:border-[#B4F461] hover:bg-[#B4F461] w-full"
               >
                 Donate Now
               </button>
@@ -137,6 +138,7 @@
           </div>
         </div>
       </section>
+      <section id="history-container"></section>
     </main>
     <script src="js/index.js"></script>
   </body>

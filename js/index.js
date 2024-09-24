@@ -1,6 +1,6 @@
 document.getElementById("donation-btn").addEventListener("click", function (e) {
   document.getElementById("card-container").classList.remove("hidden");
-  // console.log("Donation Btn clicked");
+  document.getElementById("history-container").classList.add("hidden");
 });
 document
   .getElementById("noakhali-donate-btn")
@@ -14,6 +14,7 @@ document
     );
     const decrementAmountValue =
       document.getElementById("decrement-amount").innerText;
+    const today = new Date();
     if (
       !isNaN(inputFieldValue) &&
       inputFieldValue > 0 &&
@@ -29,8 +30,19 @@ document
       document.getElementById(
         "decrement-amount"
       ).innerText = `${totalDecrementAmount} BDT`;
+      document.getElementById("history-container").innerHTML += `
+      <div class = "border rounded-xl p-8 mb-8">
+      <p class = "text-[#111111] text-xl font-bold">${inputFieldValue} Taka is Donated for Flood at Noakhali, Bangladesh.</p>
+      <small class = "text-[#111111B2] text-base font-light">${today}</small>
+      </div>
+      `;
       alert("Thanks");
     } else {
       alert("Please provide valid amount.");
     }
   });
+
+document.getElementById("history-btn").addEventListener("click", function (e) {
+  document.getElementById("history-container").classList.remove("hidden");
+  document.getElementById("card-container").classList.add("hidden");
+});
