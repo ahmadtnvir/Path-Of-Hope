@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
+    <header class="mb-20">
       <!-- navbar start -->
       <div class="bg-[#F9F7F3] pt-6 pb-16">
         <div id="navbar" class="navbar">
@@ -75,13 +75,69 @@
           <div class="navbar-end">
             <a class="btn">
               <img src="assets/coin.png" alt="" />
-              <span class="text-[#111111B2] text-xl font-medium">5500 BDT</span>
+              <span
+                id="decrement-amount"
+                class="text-[#111111B2] text-xl font-medium"
+                >5500 BDT</span
+              >
             </a>
           </div>
         </div>
       </div>
       <!-- navbar end -->
     </header>
+    <main>
+      <div class="flex justify-center items-center gap-4 mb-8">
+        <button
+          id="donation-btn"
+          class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent"
+        >
+          Donation
+        </button>
+        <button
+          class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent"
+        >
+          History
+        </button>
+      </div>
+      <section id="card-container" class="space-y-8 hidden">
+        <div class="card lg:card-side bg-[#FFFFFF] border p-8">
+          <figure class="flex-1">
+            <img class="object-cover" src="assets/noakhali.png" alt="Album" />
+          </figure>
+          <div class="card-body flex-1">
+            <button class="btn w-fit">
+              <img src="assets/coin.png" alt="" />
+              <span id="total-donation-for-noakhali">0 BDT</span>
+            </button>
+            <h2 class="card-title my4">
+              Donate for Flood at Noakhali, Bangladesh
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              voluptatem culpa quis nesciunt mollitia natus, laboriosam adipisci
+              maxime, quae unde voluptate suscipit laudantium. Est quae
+              dignissimos quidem nihil ratione ducimus.
+            </p>
+            <input
+              class="mt-6 mb-4"
+              type="text"
+              name=""
+              id="noakhali"
+              placeholder="Write Donation Amount"
+            />
+            <div class="card-actions justify-end w-full">
+              <button
+                id="noakhali-donate-btn"
+                class="btn btn-outline hover:bg-[#B4F461] w-full"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="js/index.js"></script>
   </body>
 </html>

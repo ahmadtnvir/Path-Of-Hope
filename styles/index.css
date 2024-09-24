@@ -11,8 +11,7 @@ body {
     background: #FFF;
 }
 
-#navbar {
+#navbar, main {
     max-width: 90%;
     margin: 0 auto;
-    /* display: ; */
 }
