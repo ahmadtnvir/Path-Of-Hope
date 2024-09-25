@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header id="header" class="mb-20">
+    <header id="header" class="fixed top-0 left-0 w-full z-50 bg-white">
       <!-- navbar start -->
       <div class="bg-[#F9F7F3] pt-6 pb-16">
         <div id="navbar" class="navbar">
@@ -89,9 +89,7 @@
         </div>
       </div>
       <!-- navbar end -->
-    </header>
-    <main>
-      <div class="flex justify-center items-center gap-4 mb-8">
+      <div class="flex justify-center items-center gap-4 mt-20 mb-8">
         <button
           id="donation-btn"
           class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent focus:bg-[#B4F461] focus:text-[#111111] focus:border-[#B4F461]"
@@ -106,6 +104,8 @@
           History
         </button>
       </div>
+    </header>
+    <main class="mt-[350px]">
       <section id="card-container" class="space-y-8">
         <div class="card lg:card-side bg-[#FFFFFF] border p-8">
           <figure class="flex-1">
@@ -216,19 +216,20 @@
             </div>
           </div>
         </div>
-      </section>
-      <dialog id="donationModal" class="modal modal-bottom sm:modal-middle">
-        <div class="modal-box">
-          <h3 class="text-lg font-bold">Notification</h3>
-          <p id="modalMessage" class="py-4">Message will appear here...</p>
-          <div class="modal-action">
-            <form method="dialog">
-              <button class="btn">Close</button>
-            </form>
+        <dialog id="donationModal" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Notification</h3>
+            <p id="modalMessage" class="py-4">Message will appear here...</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <button class="btn">Close</button>
+              </form>
+            </div>
           </div>
-        </div>
-      </dialog>
-      <section id="history-container"></section>
+        </dialog>
+      </section>
+
+      <section id="history-container" class="hidden"></section>
     </main>
     <script src="js/index.js"></script>
     <script src="js/utilities.js"></script>
