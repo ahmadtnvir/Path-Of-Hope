@@ -82,7 +82,7 @@
               <span
                 id="decrement-amount"
                 class="text-[#111111B2] text-xl font-medium"
-                >5500 BDT</span
+                >5500</span
               >
             </a>
           </div>
@@ -114,7 +114,7 @@
           <div class="card-body flex-1">
             <button class="btn w-fit">
               <img src="assets/coin.png" alt="" />
-              <span id="total-donation-for-noakhali">0 BDT</span>
+              <span id="total-donation-for-noakhali">0</span>
             </button>
             <h2 class="card-title my4">
               Donate for Flood at Noakhali, Bangladesh
@@ -142,9 +142,95 @@
             </div>
           </div>
         </div>
+        <div class="card lg:card-side bg-[#FFFFFF] border p-8">
+          <figure class="flex-1">
+            <img class="object-cover" src="assets/feni.png" alt="Album" />
+          </figure>
+          <div class="card-body flex-1">
+            <button class="btn w-fit">
+              <img src="assets/coin.png" alt="" />
+              <span id="total-donation-for-feni">0</span>
+            </button>
+            <h2 class="card-title my4">
+              Donate for Flood Relief in Feni, Bangladesh
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              voluptatem culpa quis nesciunt mollitia natus, laboriosam adipisci
+              maxime, quae unde voluptate suscipit laudantium. Est quae
+              dignissimos quidem nihil ratione ducimus.
+            </p>
+            <input
+              class="mt-6 mb-4 p-5 border rounded-xl focus:outline-none"
+              type="text"
+              name=""
+              id="feni"
+              placeholder="Write Donation Amount"
+            />
+            <div class="card-actions justify-end w-full">
+              <button
+                id="feni-donate-btn"
+                class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent focus:bg-[#B4F461] focus:text-[#111111] focus:border-[#B4F461] hover:bg-[#B4F461] w-full"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card lg:card-side bg-[#FFFFFF] border p-8">
+          <figure class="flex-1">
+            <img
+              class="object-cover"
+              src="assets/quota-protest.png"
+              alt="Album"
+            />
+          </figure>
+          <div class="card-body flex-1">
+            <button class="btn w-fit">
+              <img src="assets/coin.png" alt="" />
+              <span id="total-donation-for-quotaMovement">0</span>
+            </button>
+            <h2 class="card-title my4">
+              Aid for Injured in the Quota Movement
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              voluptatem culpa quis nesciunt mollitia natus, laboriosam adipisci
+              maxime, quae unde voluptate suscipit laudantium. Est quae
+              dignissimos quidem nihil ratione ducimus.
+            </p>
+            <input
+              class="mt-6 mb-4 p-5 border rounded-xl focus:outline-none"
+              type="text"
+              name=""
+              id="movement"
+              placeholder="Write Donation Amount"
+            />
+            <div class="card-actions justify-end w-full">
+              <button
+                id="movement-donate-btn"
+                class="btn text-[#111111B2] text-xl font-medium border-[#111111B2] bg-transparent focus:bg-[#B4F461] focus:text-[#111111] focus:border-[#B4F461] hover:bg-[#B4F461] w-full"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
+      <dialog id="donationModal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold">Notification</h3>
+          <p id="modalMessage" class="py-4">Message will appear here...</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
       <section id="history-container"></section>
     </main>
     <script src="js/index.js"></script>
+    <script src="js/utilities.js"></script>
   </body>
 </html>
